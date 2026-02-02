@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Charging Widget</string>
+    <string name="widget_name">Charging Wattage</string>
+    <string name="widget_description">Shows real-time charging wattage on your home and lock screen</string>
+    <string name="loading">Loading…</string>
+    <string name="watt_unit">W</string>
+    <string name="preview_charging_type">USB</string>
+    <string name="preview_wattage">27.4</string>
+    <string name="preview_percent">78%</string>
+</resources>

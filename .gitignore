@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration
+local.properties
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Android/NDK
+.cxx/
+.externalNativeBuild/
+
+# Kotlin
+.kotlin/
+
+# OS
+.DS_Store
+
+# Archived/alternate project
+charging-widget/
+
+# Logs
+*.log
