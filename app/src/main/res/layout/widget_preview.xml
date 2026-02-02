@@ -14,9 +14,10 @@
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_charging"
         android:drawablePadding="8dp"
+        android:drawableTint="@color/widget_icon_tint"
         android:gravity="center_vertical"
         android:text="@string/preview_charging_type"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/widget_text_primary"
         android:textSize="14sp"
         tools:ignore="UseCompatTextViewDrawableXml" />
 
@@ -31,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/preview_wattage"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="@color/widget_text_primary"
             android:textSize="42sp"
             android:textStyle="bold" />
 
@@ -41,7 +42,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginBottom="6dp"
             android:text="@string/watt_unit"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="@color/widget_text_primary"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/preview_percent"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/widget_text_primary"
         android:textSize="14sp"
         android:textStyle="bold" />
 

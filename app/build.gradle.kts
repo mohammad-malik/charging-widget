@@ -62,6 +62,8 @@ dependencies {
     implementation("androidx.compose.runtime:runtime")
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
+    // Material3 theme resources (for Theme.Material3.* in XML)
+    implementation("com.google.android.material:material:1.11.0")
 
     // Lifecycle
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")

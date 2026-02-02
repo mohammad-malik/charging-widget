@@ -7,41 +7,41 @@
 
     <!-- Background -->
     <path
-        android:fillColor="#E8DEF8"
+        android:fillColor="@color/widget_primary_container"
         android:pathData="M0,24C0,10.745,10.745,0,24,0H156C169.255,0,180,10.745,180,24V86C180,99.255,169.255,110,156,110H24C10.745,110,0,99.255,0,86V24Z" />
 
     <!-- Charging icon placeholder -->
     <path
-        android:fillColor="#1D1B20"
+        android:fillColor="@color/widget_on_primary_container"
         android:pathData="M62,20L58,20L64,32L60,32L60,42L68,30L64,30L68,20L62,20Z" />
 
     <!-- "USB" text placeholder -->
     <path
-        android:fillColor="#1D1B20"
+        android:fillColor="@color/widget_on_primary_container"
         android:pathData="M76,28a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
 
     <!-- Wattage "27.4" -->
     <path
-        android:fillColor="#1D1B20"
+        android:fillColor="@color/widget_on_primary_container"
         android:pathData="M50,48L55,48L55,52L60,52L60,48L65,48L65,68L60,68L60,56L55,56L55,68L50,68Z" />
 
     <path
-        android:fillColor="#1D1B20"
+        android:fillColor="@color/widget_on_primary_container"
         android:pathData="M70,48L85,48L85,52L75,52L75,56L83,56L83,60L75,60L75,68L70,68Z" />
 
     <!-- "W" label -->
     <path
-        android:fillColor="#1D1B20"
+        android:fillColor="@color/widget_on_primary_container"
         android:pathData="M120,58L124,58L126,66L128,58L132,58L128,72L124,72Z" />
 
     <!-- Progress bar background -->
     <path
-        android:fillColor="#49454F"
+        android:fillColor="@color/widget_progress_track"
         android:pathData="M20,82L160,82A4,4 0,0 1,164,86L164,90A4,4 0,0 1,160,94L20,94A4,4 0,0 1,16,90L16,86A4,4 0,0 1,20,82Z" />
 
     <!-- Progress bar fill (78%) -->
     <path
-        android:fillColor="#6750A4"
+        android:fillColor="@color/widget_progress_fill"
         android:pathData="M20,82L131.6,82A4,4 0,0 1,135.6,86L135.6,90A4,4 0,0 1,131.6,94L20,94A4,4 0,0 1,16,90L16,86A4,4 0,0 1,20,82Z" />
 
 </vector>

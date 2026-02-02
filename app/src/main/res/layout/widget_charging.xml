@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widgetRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +20,8 @@
             android:id="@+id/ivChargingIcon"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic_charging" />
+            android:src="@drawable/ic_charging"
+            app:tint="@color/widget_icon_tint" />
 
         <TextView
             android:id="@+id/tvChargingType"
@@ -27,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="AC"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="@color/widget_text_primary"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="0 W"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/widget_text_primary"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -50,7 +52,8 @@
         android:layout_height="8dp"
         android:layout_marginTop="12dp"
         android:max="100"
-        android:progress="50" />
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_bar" />
 
     <!-- Battery percent and current -->
     <LinearLayout
@@ -65,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="50%"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="@color/widget_text_primary"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -75,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:text="0 mA"
-            android:textColor="?android:attr/textColorSecondary"
+            android:textColor="@color/widget_text_secondary"
             android:textSize="12sp" />
     </LinearLayout>
 

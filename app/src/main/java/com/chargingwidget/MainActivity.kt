@@ -11,17 +11,21 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.view.WindowCompat
 import androidx.core.content.ContextCompat
 import com.chargingwidget.data.ChargingDataProvider
 import com.chargingwidget.service.ChargingJobService
@@ -62,7 +66,23 @@ class MainActivity : ComponentActivity() {
         }
 
         setContent {
-            MaterialTheme {
+            val darkTheme = isSystemInDarkTheme()
+            val colorScheme = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                if (darkTheme) dynamicDarkColorScheme(this) else dynamicLightColorScheme(this)
+            } else {
+                if (darkTheme) darkColorScheme() else lightColorScheme()
+            }
+            val view = LocalView.current
+            val window = (view.context as ComponentActivity).window
+            SideEffect {
+                window.statusBarColor = colorScheme.surface.toArgb()
+                window.navigationBarColor = colorScheme.surface.toArgb()
+                WindowCompat.getInsetsController(window, view).apply {
+                    isAppearanceLightStatusBars = !darkTheme
+                    isAppearanceLightNavigationBars = !darkTheme
+                }
+            }
+            MaterialTheme(colorScheme = colorScheme) {
                 MainScreen(
                     onUpdateWidget = {
                         updateWidget()

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/loading"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/widget_text_primary"
         android:textSize="16sp" />
 
 </FrameLayout>
